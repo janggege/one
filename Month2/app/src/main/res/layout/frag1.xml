@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <shixun.lj.bw.month.activity.MyLiner
+        android:id="@+id/shou"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></shixun.lj.bw.month.activity.MyLiner>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.recker.flybanner.FlyBanner
+                android:id="@+id/fly"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"></com.recker.flybanner.FlyBanner>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bit"
+                android:gravity="center"
+                android:text="热销新品"
+                android:textColor="#ff7f57"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mo"
+                android:gravity="center"
+                android:text="魔力时尚"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/pinzhi"
+                android:gravity="center"
+                android:text="品质生活"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.bawei.swiperefreshlayoutlibrary.SwipyRefreshLayout
+        android:id="@+id/ser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </com.bawei.swiperefreshlayoutlibrary.SwipyRefreshLayout>
+
+
+</LinearLayout>
